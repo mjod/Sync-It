@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sync It</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="class_section"><b>CSE 691 - M800</b></string>
+    <string name="name"><b>Matthew O\'Donnell</b></string>
+    <string name="viewPager">Task 3: ViewPager</string>
+    <string name="aboutMe">About Me</string>
+    <string name="RecyclerViewString">Task 2: RecyclerView</string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+    <string name="directed_by">Directed By:</string>
+    <string name="starring">Starring:</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="title_activity_detail_view">DetailViewActivity</string>
+    <string name="open">Open drawer</string>
+    <string name="close">Close drawer</string>
+    <string name="title_activity_login_family">LoginFamilyActivity</string>
+    <string name="title_activity_register_family">RegisterFamilyActivity</string>
+
+</resources>

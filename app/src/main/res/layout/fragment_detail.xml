@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detailbackground1"
+    >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calendar"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cal_image"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event name"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/cal_image"
+                android:singleLine="true"
+                android:id="@+id/eventEdit"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/marker"
+                android:layout_marginTop="21dp"
+                android:layout_below="@id/cal_image"
+                android:id="@+id/marker_image"/>
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:layout_below="@id/eventEdit"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/marker_image"
+                android:singleLine="true"
+                android:id="@+id/locationEdit">
+            </AutoCompleteTextView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/clock"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/marker_image"
+                android:id="@+id/start_image"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start"
+                android:editable="false"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/locationEdit"
+                android:layout_toRightOf="@+id/start_image"
+                android:id="@+id/startDateBtn"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/clock"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/start_image"
+                android:id="@+id/end_image"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/startDateBtn"
+                android:editable="false"
+                android:layout_toRightOf="@id/end_image"
+                android:id="@+id/endDateBtn"
+                android:layout_marginTop="20dp"
+                android:hint="End"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ppl"
+                android:layout_marginTop="21dp"
+                android:layout_below="@id/end_image"
+                android:id="@+id/guests_image"/>
+            <MultiAutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Guests"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/endDateBtn"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/guests_image"
+                android:id="@+id/guests"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/info"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/guests_image"
+                android:id="@+id/desc_image"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:layout_toRightOf="@id/desc_image"
+                android:id="@+id/eventDescription"
+                android:singleLine="true"
+                android:layout_below="@id/guests"/>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/okayButton"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/titleshape"
+                    android:layout_below="@id/eventDescription"
+                    android:text="Okay"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- The main content view -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+            android:layout_width="match_parent" android:layout_height="fill_parent"
+            tools:context=".MainAcitvity" tools:ignore="MergeRootFrame" android:layout_below="@id/toolbar">
+        </FrameLayout>
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"
+        android:id="@+id/drawer">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/nav_banner"
+            android:background="@android:color/white"
+            android:src="@drawable/full_logo"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surname"
+            android:textColor="#0b84aa"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/nav_banner"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/drawer_list"
+            android:layout_below="@id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
